@@ -1,0 +1,9 @@
+<h1>You created a contact!</h1>
+<p>Name: @Model.GetFirstName() @Model.GetLastName()</p>
+<p>Phone: @Model.GetPhoneNumber()</p>
+<p>Adress:</p>
+<ul>
+  <li>@Model.GetStreetAddress()</li>
+  <li>@Model.GetCity(), @Model.GetState() @Model.GetZipCode()</li>
+</ul>
+<a href="/contacts">View all contacts</a>
