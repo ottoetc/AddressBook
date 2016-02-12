@@ -6,14 +6,14 @@ namespace Address.Objects
   {
     private string _firstName;
     private string _lastName;
-    private int _phoneNumber;
+    private string _phoneNumber;
     private string _streetAddress;
     private string _city;
     private string _state;
-    private int _zipCode;
+    private string _zipCode;
     private static List<Contact> _allContacts = new List<Contact> {};
 
-    public Contact(string firstName, string lastName, int phoneNumber, string streetAddress, string city, string state, int zipCode)
+    public Contact(string firstName, string lastName, string phoneNumber, string streetAddress, string city, string state, string zipCode)
     {
       _firstName = firstName;
       _lastName = lastName;
@@ -39,11 +39,11 @@ namespace Address.Objects
     {
       _lastName = newLastName;
     }
-    public int GetPhoneNumber()
+    public string GetPhoneNumber()
     {
       return _phoneNumber;
     }
-    public void SetPhoneNumber(int newPhoneNumber)
+    public void SetPhoneNumber(string newPhoneNumber)
     {
       _phoneNumber = newPhoneNumber;
     }
@@ -72,11 +72,11 @@ namespace Address.Objects
       _state = newState;
     }
 
-    private int GetZipCode()
+    public string GetZipCode()
     {
       return _zipCode;
     }
-    private void SetZipCode(int newZipCode)
+    public void SetZipCode(string newZipCode)
     {
       _zipCode = newZipCode;
     }
